@@ -15,11 +15,13 @@
                 <div class="d-flex d-flex justify-content-between">
                     <a class="navbar-brand">Navbar</a>
                     <a class="navbar-brand ms-3">Cart(10)</a>
+                    
+                  
                 </div>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              <div class="d-flex" role="search">
+                <input type="search" id="searchbar" placeholder="Search Products">
+                <button class="btn btn-outline-success" onclick="searchProduct()" >Search</button>
+            </div>
             </div>
           </nav>
     </header>
@@ -51,71 +53,11 @@
     </section>
 <!-- cards -->
     <section class="container">
-        <h1>Products</h1>
-        <div class="row">
-<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-        <div class="card">
-            <img src="https://img.freepik.com/free-psd/laptop-mock-up-design_1307-45.jpg?t=st=1723467214~exp=1723470814~hmac=4301ca6173122769dc8036eb4b08515f02dc5d72d70ea5745697e5389dd4989f&w=826" class="card-img-top p-3 pt-0" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Laptop</h5>
-              <span class="tex-success">$830</span>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex">
-              <a href="#" class="btn btn-warning">View Products</a>
-              <a href="#" class="btn btn-primary ms-1">Add to Cart</a>
-            </div>
-            </div>
-          </div>
+        <h1 id="h">Products</h1>
+        <div class="row" id="pContainer">
+
+          
         </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-            <div class="card">
-            <img src="https://img.freepik.com/free-vector/realistic-display-smartphone-with-different-apps_52683-30241.jpg?t=st=1723470370~exp=1723473970~hmac=ca48a6f5379052a9292c1c9c25fefad33d6aef757b6109413fed6ae8894cdde2&w=826" class="card-img-top p-3 pt-0" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Phone</h5>
-              <span class="tex-success">$235</span>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex">
-              <a href="#" class="btn btn-warning">View Products</a>
-              <a href="#" class="btn btn-primary ms-1">Add to Cart</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-
-            <div class="card">
-            <img src="https://img.freepik.com/premium-photo/sleek-stylish-enhance-your-game-with-this-rgb-gaming-mouse_1312917-975.jpg?w=826" class="card-img-top p-3 pt-0" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mouse</h5>
-              <span class="tex-success">$11</span>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex">
-              <a href="#" class="btn btn-warning">View Products</a>
-              <a href="#" class="btn btn-primary ms-1">Add to Cart</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-            <div class="card">
-            <img src="https://img.freepik.com/premium-photo/keyboard-with-letters-lg-it_987764-213453.jpg?w=740" class="card-img-top p-3 pt-0" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Keyboard</h5>
-              <span class="tex-success">$18</span>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex">
-              <a href="#" class="btn btn-warning">View Products</a>
-              <a href="#" class="btn btn-primary ms-1">Add to Cart</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
     </section>
 
     <footer>
@@ -140,5 +82,6 @@
 
 
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
